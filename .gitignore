@@ -1,0 +1,13 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+env/
+.env
+
+# Streamlit secrets (Gemini API key)
+.streamlit/secrets.toml
+
+# Optional: DOCX outputs
+*.docx
