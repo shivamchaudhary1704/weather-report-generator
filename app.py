@@ -48,7 +48,11 @@ You are a research assistant. Create a structured research report on: "{state}"
 - Make it concise but informative
 - Use info from Wikipedia and web search (DuckDuckGo)
 """
+    try:
     report_text = agent.run(system_prompt)
+    except Exception as e:
+    st.error("⚠️ API limit reached or an error occurred. Please try again later.")
+    st.stop()
 
     # Create DOCX in memory
     doc = Document()
