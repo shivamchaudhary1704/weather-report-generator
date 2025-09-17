@@ -12,7 +12,7 @@ from langchain.agents import initialize_agent, Tool, AgentType
 
 api_key = st.secrets["GOOGLE_API_KEY"]
 llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash-latest", temperature=0.7)
-
+# ddgo integrated
 ddg = DuckDuckGoSearchAPIWrapper()
 ddg_tool = DuckDuckGoSearchRun(api_wrapper=ddg)
 
