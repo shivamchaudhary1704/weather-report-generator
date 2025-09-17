@@ -15,7 +15,7 @@ llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash-latest", temperature=0.7)
 # ddgo integrated
 ddg = DuckDuckGoSearchAPIWrapper()
 ddg_tool = DuckDuckGoSearchRun(api_wrapper=ddg)
-
+#added wiki 
 wiki = WikipediaAPIWrapper(top_k_results=5)
 wiki_tool = WikipediaQueryRun(api_wrapper=wiki)
 
